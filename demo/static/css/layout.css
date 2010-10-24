@@ -1,0 +1,212 @@
+/* Tables */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+}
+th, td {
+	text-align: left;
+	font-weight: normal;
+}
+/* Image Borders */
+a img,:link img,:visited img { border:none }
+/* Lists */
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* Code/No Wrap */
+pre,code{
+	white-space: pre;
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+/* Typography */
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: "league-gothic-1","league-gothic-2";
+}
+h1 {font-size: 24px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 15px;}
+h5 {font-size: 13px;}
+h6 {font-size: 11px;}
+/* Paragraphs */
+p  {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-size: 12px;
+}
+/* Links */
+a,
+a:visited {
+	text-decoration: underline;
+	color: #000;
+	outline: 0;
+	border: none;
+}
+a:hover,
+a:active,
+a:focus {
+	color: #ff0000;
+	text-decoration: underline;
+}
+/* ================== */
+/* = GENERAL LAYOUT = */
+/* ================== */
+header,
+nav,
+hgroup,
+section,
+article,
+aside,
+footer {
+	display: block;
+}
+/* ============== */
+/* = TYPOGRAPHY = */
+/* ============== */
+h1,h2,h3,h4,h5,h6 {
+	color: #009294;
+	text-transform: uppercase;
+	text-shadow:0 1px 0 rgba(255,255,255,0.7);
+	margin-bottom: 10px;
+}
+h1 {}
+h2 {font-size: 30px;}
+h3 {
+	font-size: 30px;
+	color: #fff;
+	text-shadow:0 1px 0 rgba(0,0,0,0.2);
+}
+h4 {}
+h5 {}
+h6 {}
+p {}
+a, a:visited {
+	text-decoration: underline;
+	color: #10454f;
+	outline: 0;
+	border: none;
+}
+a:hover, a:active, a:focus {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* ================= */
+/* = STICKY FOOTER = */
+/* ================= */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#main {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -140px;
+position: relative;
+/* background-color: rgba(255,255,255,0.3);
+border: 1px solid rgba(255,255,255,0.35);
+border-top: none;
+border-bottom: none;
+ */
+background-image: -moz-linear-gradient(0% 100% 90deg,rgba(255,255,255,0), rgba(255,255,255,0.6));
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.6)), to(rgba(255,255,255,0)));
+width: 920px;
+}
+footer, .push {
+height: 140px;
+clear: both;
+}
+/* style */
+body {
+	font: 20px/1.4 Helvetica,Arial,sans-serif;
+	color: #fff;
+}
+header {
+	height: 80px;
+	background-color: #eee;
+	background-color: rgba(255,255,255,0.5);
+	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(255,255,255,0.54);
+}
+h1 {
+	font-size: 60px;
+	margin: 10px 0 20px;
+}
+.intro {
+	padding: 85px 20px 50px;
+	margin: 0 0 20px 0;
+}
+p {
+	font: 16px/1.45 "chaparral-pro-caption-1","chaparral-pro-caption-2",Georgia,serif;
+	color: #304546;
+	margin-bottom: 12px;
+}
+footer {
+	position: relative;
+	text-align: center;
+	width: 940px;
+	margin: 0 auto;
+	background-color: #5b8384;
+	background-color: rgba(91,131,132,0.7);
+	color: #000;
+	display: block;
+}
+footer .centered {
+	padding-top: 25px;
+	border-top: 1px solid #fff;
+}
+footer p {margin-bottom: 0;color: #eee;font-weight: 600;text-shadow:0 1px 0 rgba(0,0,0,0.2);}
+footer p a {text-shadow:0 1px 0 rgba(255,255,255,0.2);}
+footer p a:hover {text-shadow:0 1px 0 rgba(0,0,0,0.2);}
+.centered {
+	width: 940px;
+	margin: 0 auto;
+}
+
+code {
+	left:-40px;
+	width: 940px;
+	display: block;
+	margin: 25px auto;
+	position: relative;
+	padding: 20px 10px;
+	background-image: -moz-linear-gradient(0% 100% 90deg,rgba(255,255,255,1), rgba(255,255,255,0.5));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,1)), to(rgba(255,255,255,0.5)));
+	background-color: #eee;
+	border: 1px solid #fff;
+	font-size: 13px;
+	color: #000;
+	text-align: left;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+code span {
+	font-weight: bold;
+	color: green;
+}
+code em {color: #444;font-size: 12px;}
+hr {
+  border: 0;
+  border-top: 1px solid #000;
+  border-bottom-color: #fff;
+  border-top-color: rgba(0,0,0,0.1);
+  border-bottom-color: rgba(255,255,255,0.3);
+  filter: alpha(opacity = 30);
+  clear: both;
+  height: 0;
+  margin: 15px 0;
+width: 880px;
+}

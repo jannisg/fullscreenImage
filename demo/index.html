@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery fullscreenimage playground</title>
+    
+    <script type="text/javascript" src="http://use.typekit.com/hbw1ues.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <link rel="stylesheet" href="static/css/layout.css">
+    <script src="./static/js/modernizr-1.5.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="main">
+        <article>
+            <div class="centered">
+            
+            <div class="intro">
+            <h1>jQuery fullscreenImage plugin.</h1>
+            <p>Just a simple plugin that makes any image you have a fullscreen background image without breaking the aspect ratio of your image.</p>
+            <hr />
+            <h2>How To:</h2>
+            <p>To use simply create a container with an image inside then pass this container into the fullscreenimage() jquery plugin.</p>
+            <hr />
+            <h2>Options:</h2>
+            <p>There are some basic controls you should be aware of. For a list of options and their defaults check out the code box below.</p>
+            <code>
+    <strong>Plugin options and the defaults:</strong>
+    
+    <strong>maxUpscale</strong>: <span>1</span>                              <em>(upscale ratio, eg: 1.5 would upscale the image to 150%, then use the rasterImg overlay)</em>
+    <strong>rasterImg</strong>: <span>'/static/img/raster.png'</span>        <em>(a 2px raster that neatly disguises the bad effects of image upscaling)</em>
+    <strong>showRaster</strong>: <span>true</span> | false                   <em>(easily disable the raster all together)</em>
+    <strong>vAlign</strong>: <span>'center'</span> | 'top' | 'bottom'        <em>(set the anchor point of the image's vertical axis)</em>
+            </code>
+            <hr />
+            <h2>Compatibility</h2>
+            <p>This little plugin has been tested in Internet Explorer 6+, Opera 10.6, Firefox 3.6+, Google Chrome & Safari 5.</p>
+            <hr />
+            <h2>Size</h2>
+            <p>Tiny.</p>
+            <p>Minified & Gzipped this plugin only weights: <strong>745 bytes</strong></p>
+            </div>
+            </div>
+            
+        </article>
+        <div class="push"></div>
+    </div>
+    <footer>
+        <div class="centered">
+        
+        <h3>What now?</h3>
+        <p>Go ahead and download the code over at <a href="http://github.com/jannisg/fullscreenImage">github</a>.</p>
+        <p>I welcome any requests and questions so if you have something to say, <a href="mailto:jannis@gundermann.me">send me an email</a>.</p>
+        
+        </div>
+    </footer>
+    <div id="fullscreenimage">
+        <img src="./static/img/sample-background.jpg" alt="" width="1280" height="769" />
+    </div>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="../jq.fullscreenimage.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+        // init
+        $('#fullscreenimage').fullscreenimage({
+            maxUpscale: 1.2,
+            rasterImg: './static/img/raster.png',
+            showRaster: false,
+            vAlign: 'center'
+        });
+        
+    </script>
+</body>
+</html>
