@@ -38,4 +38,4 @@ Minified & Gzipped this plugin is just 745 bytes.
 
 ## Demo please?
 
-Sure… [here](http://gundermann.me/playground/jq-fullscreenimage/) you go.
+Sure… [here](http://gundermann.me/playground/fullscreenimage/) you go.
