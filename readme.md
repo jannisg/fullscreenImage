@@ -16,15 +16,16 @@ To use simply create a container with an image inside then pass this container i
 *  set your own path to a custom raster image. the demo folder contains a simple 8 bit png with a black 2px by 2px raster image but a different colour may work better for your images
 *  turn the raster overlay off entirely by setting 'showRaster' to false.
 *  easily set the vertical anchor point of the enlargement.
+  
 
 
-        **maxUpscale**: 1 *(upscale ratio, eg: 1.5 would upscale the image to 150%, then use the rasterImg overlay)*  
+        maxUpscale: 1 (upscale ratio, eg: 1.5 would upscale the image to 150%, then use the rasterImg overlay)  
         
-        **rasterImg**: '/static/img/raster.png' *(a 2px raster that neatly disguises the bad effects of image upscaling)*  
+        rasterImg: '/static/img/raster.png' (a 2px raster that neatly disguises the bad effects of image upscaling)  
         
-        **showRaster**: true | false *(easily disable the raster all together)*  
+        showRaster: true | false (easily disable the raster all together)  
         
-        **vAlign**: 'center' | 'top' | 'bottom' *(set the anchor point of the image's vertical axis)*  
+        vAlign: 'center' | 'top' | 'bottom' (set the anchor point of the image's vertical axis)  
         
     
 ## Compatibility
