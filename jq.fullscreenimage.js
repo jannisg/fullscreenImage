@@ -16,7 +16,7 @@
 				
 			var options =  $.extend(defaults, options);
 			var FSI = {}; // object for the safe keeping of values
-			
+			var ie6 = ($.browser.msie && $.browser.version <= '6.0');
 			return this.each(function() {
 				var o = options;
 				var self;
@@ -35,12 +35,14 @@
 				FSI.iRatio = FSI.iw / FSI.ih;
 				FSI.raster = o.rasterImg;
 				FSI.maxUpscale = o.maxUpscale;
+				FSI.pos = (ie6 ? 'absolute' : 'fixed');
+				
 				if ( o.showRaster ) { 
 				FSI.rasterContainer = $('<div />', {
 					'class':'raster',
 					'css': {
 						background: 'url('+FSI.raster+') repeat top left',
-						'position':'absolute',
+						'position':FSI.pos,
 						top:0,
 						left:0,
 						width:'100%',
@@ -54,7 +56,7 @@
 				// setup
 				FSI.c.css({
 				  	zIndex: '-1', // make sure the container does not interfer with any on screen elements
-				  	position: 'fixed',
+				  	position: FSI.pos,
 					top:0,
 					left:0,
 					width:'100%',
@@ -83,7 +85,7 @@
 						}
 			
 						FSI.i.css({
-							'position':'absolute',
+							'position':FSI.pos,
 							'z-index':-1,
 							'width':FSI.icw,
 							'height':FSI.ich,
