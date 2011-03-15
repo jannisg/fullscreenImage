@@ -9,8 +9,8 @@
 			//Set the default values, use comma to separate the settings, example:
 			var defaults = {
 				maxUpscale: 1, // ratio of enlargement before raster turns itself on
-				rasterImg: '/static/img/raster.png', // path to your raster image. a black 8bit png 2px by 2px raster is the default.
-				showRaster: true, // options here are false, true, 'upscale'. Upscale only shows the raster if the image goes over the maxUpscale size
+				rasterImg: '', // path to your raster image. a black 8bit png 2px by 2px raster is the default.
+				showRaster: false, // options here are false, true, 'upscale'. Upscale only shows the raster if the image goes over the maxUpscale size
 				vAlign: 'center' // options are top, center, bottom
 			}
 				
