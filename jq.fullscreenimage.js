@@ -60,7 +60,7 @@
 					top:0,
 					left:0,
 					width:'100%',
-					height:'100%',
+					height: ( ie6 ? $(window).height()+'px' : '100%' ),
 					overflow:'hidden'
 				});
 				if ( o.showRaster ) { 
