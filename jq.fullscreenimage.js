@@ -68,8 +68,8 @@
 				}
 				
 				function fullscreenimage() {
-					FSI.icw; // stores computed image width
-					FSI.ich;	// stores computed image height
+					FSI.icw = 0; // stores computed image width
+					FSI.ich = 0;	// stores computed image height
 					FSI.ww	=	$(window).width(); // gets the viewport width
 					FSI.wh	=	$(window).height();// gets the viewport height
 					FSI.windowRatio = FSI.ww/FSI.wh; // window ratio, duh…
